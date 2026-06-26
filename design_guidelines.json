@@ -1,0 +1,128 @@
+{
+  "project_info": {
+    "brand_name": "M&A Precision Mechanical Inc",
+    "business_type": "24/7 Mobile Mechanic Service",
+    "theme": "Dark",
+    "archetype": "Performance Pro (Archetype 2) + Jewel & Luxury (Archetype 5) fusion"
+  },
+  "design_system": {
+    "colors": {
+      "primary": "#E10600",
+      "primary_hover": "#FF1E18",
+      "background": "#0A0A0A",
+      "surface": "#121212",
+      "surface_elevated": "#1A1A1A",
+      "text_primary": "#FFFFFF",
+      "text_secondary": "#A0A0A0",
+      "border": "#2A2A2A",
+      "glow_red": "rgba(225, 6, 0, 0.5)",
+      "glow_red_intense": "rgba(225, 6, 0, 0.8)",
+      "metallic_grey": "#8C92AC"
+    },
+    "typography": {
+      "fonts": {
+        "headings": "Outfit",
+        "body": "Manrope",
+        "mono": "JetBrains Mono"
+      },
+      "rules": {
+        "h1": "text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter uppercase",
+        "h2": "text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight uppercase",
+        "h3": "text-xl md:text-2xl font-bold tracking-tight",
+        "body": "text-base text-gray-400 leading-relaxed",
+        "overline": "text-sm font-bold tracking-[0.2em] text-[#E10600] uppercase"
+      }
+    },
+    "spacing_and_layout": {
+      "section_padding": "py-20 lg:py-32",
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "border_radius": "rounded-none",
+      "card_padding": "p-8 lg:p-10"
+    },
+    "surface_strategies": {
+      "cards": "Flat background (#121212), 1px solid border (#2A2A2A), zero border-radius. On hover: border-color changes to #E10600, subtle red inner shadow.",
+      "glassmorphism": "Only used for sticky header. backdrop-blur-xl bg-black/70 with 1px border-b border-white/10.",
+      "glow_effects": "Buttons and active states use drop-shadow-[0_0_15px_rgba(225,6,0,0.5)]."
+    }
+  },
+  "media": {
+    "images": {
+      "logo": "https://customer-assets.emergentagent.com/job_dc2ce183-7795-48c8-b18b-868e466a1265/artifacts/g9lkzvux_WhatsApp%20Image%202026-04-28%20at%2012.27.11%20PM.jpg",
+      "hero_background": "https://images.unsplash.com/photo-1645400379459-f6fd3d963fd4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxtZWNoYW5pYyUyMHJlcGFpcmluZyUyMHNwb3J0cyUyMGNhciUyMGRhcmt8ZW58MHx8fHwxNzc3Mzk3MDkwfDA&ixlib=rb-4.1.0&q=85",
+      "about_section": "https://images.pexels.com/photos/9139593/pexels-photo-9139593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "service_detail_bg": "https://images.pexels.com/photos/34054722/pexels-photo-34054722.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "contact_map_placeholder": "https://images.unsplash.com/photo-1708805282785-77092a1628d3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzcG9ydHMlMjBjYXIlMjBlbmdpbmUlMjBkYXJrfGVufDB8fHx8MTc3NzM5NzA5MHww&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": {
+      "library": "@phosphor-icons/react",
+      "style": "weight='bold' or weight='duotone'"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#E10600] text-white hover:bg-[#FF1E18] uppercase font-bold tracking-wider transition-all duration-300 shadow-[0_0_15px_rgba(225,6,0,0.4)] hover:shadow-[0_0_25px_rgba(225,6,0,0.7)] px-8 py-4 rounded-none",
+      "secondary": "bg-transparent border-2 border-white text-white hover:bg-white hover:text-black uppercase font-bold tracking-wider transition-all duration-300 px-8 py-4 rounded-none",
+      "floating_mobile": "fixed bottom-6 right-6 z-50 bg-[#E10600] text-white p-4 rounded-full shadow-[0_0_20px_rgba(225,6,0,0.6)] animate-pulse flex md:hidden"
+    },
+    "inputs": {
+      "style": "bg-[#0A0A0A] border border-[#2A2A2A] text-white focus:border-[#E10600] focus:ring-1 focus:ring-[#E10600] rounded-none px-4 py-3 transition-colors",
+      "label": "text-sm text-gray-400 uppercase tracking-wide mb-2 block"
+    },
+    "service_cards": {
+      "layout": "Grid of 4 (grid-cols-1 md:grid-cols-2 xl:grid-cols-4), gap-6 for distinct cards.",
+      "style": "group relative bg-[#121212] border border-[#2A2A2A] p-8 hover:border-[#E10600] transition-all duration-300",
+      "hover_effect": "Icon turns red, subtle red gradient overlay (bg-gradient-to-b from-transparent to-[#E10600]/5) fades in, card lifts slightly (-translate-y-1)."
+    },
+    "loading_screen": {
+      "style": "Fixed inset-0 z-[100] bg-[#0A0A0A] flex items-center justify-center",
+      "animation": "Logo pulse with red glowing aura, red progress bar at bottom."
+    }
+  },
+  "sections_breakdown": {
+    "header": {
+      "layout": "Sticky, top-0, z-50, backdrop-blur-xl bg-[#0A0A0A]/80 border-b border-white/5",
+      "elements": "Logo left, Nav center (hidden on mobile), CTA right 'Book Now'"
+    },
+    "hero": {
+      "layout": "Relative h-[90vh] min-h-[600px] flex items-center pt-20",
+      "background": "Hero image with dark overlay: bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/80 to-transparent",
+      "content": "Left aligned. Overline 'Precision Mechanics'. H1 '24/7 Mobile Mechanic Service You Can Trust'. Subtext with flex row of services separated by red dots or pipes. Button group (Primary Book Now, Secondary Call Now). Phone number with icon."
+    },
+    "services": {
+      "layout": "Container py-24 bg-[#0A0A0A]",
+      "header": "Center aligned. H2 'Our Expertise'.",
+      "grid": "4 cards: Inspection, Diagnostics, Repair, Maintenance."
+    },
+    "about": {
+      "layout": "Grid 1 md:grid-cols-2 gap-12 items-center py-24 bg-[#121212] relative overflow-hidden",
+      "visuals": "Right side: Mechanic image with a metallic grid overlay or red accent border.",
+      "content": "Left side: 'We Come To You'. Bullet points with check icons (24/7, Certified, Fast Response)."
+    },
+    "booking_system": {
+      "layout": "Container py-24 relative",
+      "background": "Abstract red glow orb in background (blur-3xl opacity-20)",
+      "form": "2-column grid for inputs (Name, Phone, Email, Vehicle), full width for Service dropdown, Date/Time, Issue textarea. Submit button full width glowing red."
+    },
+    "contact": {
+      "layout": "Grid 1 md:grid-cols-2 gap-12 bg-[#0A0A0A] border-t border-[#2A2A2A]",
+      "left": "Massive click-to-call number text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 hover:to-[#E10600] transition-all. 'Available 24/7'.",
+      "right": "Map placeholder (use dark mechanic image) with red location pin."
+    },
+    "google_search_cta": {
+      "layout": "py-16 bg-[#121212] flex flex-col items-center justify-center text-center",
+      "element": "Mock Google search bar containing 'M&A Mobile Mechanic', typing cursor animation, surrounded by 5-star review trust badges."
+    },
+    "footer": {
+      "layout": "bg-[#0A0A0A] border-t border-[#2A2A2A] py-12",
+      "content": "Logo, quick links, 'precisionfix12@gmail.com', '437-665-8384', copyright."
+    }
+  },
+  "animations_and_interactions": {
+    "scroll": "Smooth scrolling (use Lenis if applicable).",
+    "reveal": "Fade up and staggered entrance for lists and grids using Framer Motion.",
+    "hover_links": "Text color changes to white, red underline expands from left to right."
+  },
+  "testing": {
+    "attributes": "All interactive elements must have data-testid='...' (e.g., 'hero-book-button', 'contact-phone-link', 'booking-form-submit')."
+  }
+}
